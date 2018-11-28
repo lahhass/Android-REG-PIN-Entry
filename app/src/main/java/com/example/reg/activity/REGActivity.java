@@ -31,19 +31,19 @@ import java.util.TimerTask;
 
 public class REGActivity extends BaseActivity {
 
-    private Button one = (Button) findViewById(R.id.one);
-    private Button two = (Button) findViewById(R.id.two);
-    private Button three = (Button) findViewById(R.id.three);
-    private Button four = (Button) findViewById(R.id.four);
-    private Button five = (Button) findViewById(R.id.five);
-    private Button six = (Button) findViewById(R.id.six);
-    private Button seven = (Button) findViewById(R.id.seven);
-    private Button eight = (Button) findViewById(R.id.eight);
-    private Button nine = (Button) findViewById(R.id.nine);
-    private Button zero = (Button) findViewById(R.id.zero);
-    private Button del = (Button) findViewById(R.id.del);
-    private Button finish = (Button) findViewById(R.id.finish);
-    private TextView pwdShow = (TextView) findViewById(R.id.password_show);
+    private Button one;
+    private Button two;
+    private Button three;
+    private Button four;
+    private Button five;
+    private Button six;
+    private Button seven;
+    private Button eight;
+    private Button nine;
+    private Button zero;
+    private Button del;
+    private Button finish;
+    private TextView pwdShow;
     private String value = "";
     private Calendar calendar1;
     private int hour = 0;
@@ -55,6 +55,20 @@ public class REGActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reg);
+
+        one = (Button) findViewById(R.id.one);
+        two = (Button) findViewById(R.id.two);
+        three = (Button) findViewById(R.id.three);
+        four = (Button) findViewById(R.id.four);
+        five = (Button) findViewById(R.id.five);
+        six = (Button) findViewById(R.id.six);
+        seven = (Button) findViewById(R.id.seven);
+        eight = (Button) findViewById(R.id.eight);
+        nine = (Button) findViewById(R.id.nine);
+        zero = (Button) findViewById(R.id.zero);
+        del = (Button) findViewById(R.id.del);
+        finish = (Button) findViewById(R.id.finish);
+        pwdShow = (TextView) findViewById(R.id.password_show);
 
         one.setOnClickListener(new OnClickListener() {
             @Override

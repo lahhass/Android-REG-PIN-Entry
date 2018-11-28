@@ -16,10 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.administrator.fiverowsv.activity.RegisterActivity"></activity>
-        <activity android:name="com.example.administrator.fiverowsv.activity.LoginActivity"></activity>
-        <activity android:name="com.example.administrator.fiverowsv.activity.REGActivity"></activity>
-        <activity android:name="com.example.administrator.fiverowsv.activity.SuccessActivity"></activity>
+        <activity android:name="com.example.reg.activity.RegisterActivity"></activity>
+        <activity android:name="com.example.reg.activity.LoginActivity"></activity>
+        <activity android:name="com.example.reg.activity.REGActivity"></activity>
+        <activity android:name="com.example.reg.activity.SuccessActivity"></activity>
     </application>
 
 </manifest>

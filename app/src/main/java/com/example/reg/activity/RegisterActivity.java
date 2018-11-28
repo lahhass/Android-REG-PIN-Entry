@@ -43,8 +43,8 @@ public class RegisterActivity extends BaseActivity {
                 String passwordAgn = passwordAgain.getText().toString();
                 //如果两次密码不同需重新输入
                 if (!passwordFst.equals(passwordAgn)) {
-                    Toast.makeText(RegisterActivity.this, "Two passwords are different, please retype.",
-                            Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(RegisterActivity.this, "Two passwords are different, please retype.",
+                           // Toast.LENGTH_SHORT).show();
                 } else {
                     Account newAccount = new Account();
                     newAccount.setName(account);
@@ -52,7 +52,7 @@ public class RegisterActivity extends BaseActivity {
                     //用户名有效则注册成功
                     if (frDB.validate(newAccount, 0)) {
                         frDB.saveAccount(newAccount);
-                        Toast.makeText(MyApplication.getContext(), "Register success", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(MyApplication.getContext(), "Register success", Toast.LENGTH_SHORT).show();
                         finish();
                     }
 

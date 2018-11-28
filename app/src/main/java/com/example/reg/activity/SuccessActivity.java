@@ -26,7 +26,7 @@ public class SuccessActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_success);
 
-        Button offline = (Button) findViewById(R.id.offline);
+        //Button offline = (Button) findViewById(R.id.offline);
         TextView time = (TextView) findViewById(R.id.time);
         Intent intent = this.getIntent();
         Bundle bundle = intent.getExtras();
@@ -34,7 +34,7 @@ public class SuccessActivity extends BaseActivity {
         minute = bundle.getInt("minute");
         second = bundle.getInt("second");
         time.setText(hour + ":" + minute + ":" + second);
-        offline.setOnClickListener(new OnClickListener() {
+   /*     offline.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 ActivityCollector.finishAll();
@@ -43,7 +43,7 @@ public class SuccessActivity extends BaseActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 MyApplication.getContext().startActivity(intent);
             }
-        });
+        });  */
     }
 
 }

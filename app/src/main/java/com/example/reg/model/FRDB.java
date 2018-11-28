@@ -63,8 +63,8 @@ public class FRDB {
                 if (cursor.getCount() == 0) {
                     return true;
                 } else {
-                    Toast.makeText(MyApplication.getContext(), "The username has been registered.",
-                            Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(MyApplication.getContext(), "The username has been registered.",
+                     //       Toast.LENGTH_SHORT).show();
                     return false;
                 }
             case 1:
@@ -80,8 +80,8 @@ public class FRDB {
                         if (passwordGet.equals(account.getPassword())) {
                             return true;
                         } else {
-                            Toast.makeText(MyApplication.getContext(), "Incorrect username or password.",
-                                    Toast.LENGTH_SHORT).show();
+                          //  Toast.makeText(MyApplication.getContext(), "Incorrect username or password.",
+                                 //   Toast.LENGTH_SHORT).show();
                             return false;
                         }
                     }
